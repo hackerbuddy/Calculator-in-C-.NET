@@ -1,0 +1,73 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="500" Width="400">
+    <Grid>
+        <Grid Margin="20,20,20,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="20*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Border BorderThickness="0" BorderBrush="Black" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Padding="5"/>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="2"  Grid.Column="0" Grid.ColumnSpan="2"/>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="3"  Grid.Column="0" />
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="4"  Grid.Column="0" />
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="5"  Grid.Column="0" />
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="6"  Grid.Column="0" />
+
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="3"  Grid.Column="1" />
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="4"  Grid.Column="1" />
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="5"  Grid.Column="1" />
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="6"  Grid.Column="1" />
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="2"  Grid.Column="2" />
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="3"  Grid.Column="2" />
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="4"  Grid.Column="2" />
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="5"  Grid.Column="2" />
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="6"  Grid.Column="2" />
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="0"  Grid.Column="3" />
+
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="2"  Grid.Column="3" />
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="3"  Grid.Column="3" />
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="4"  Grid.Column="3" />
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="5"  Grid.Column="3" />
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="6"  Grid.Column="3" />
+            
+            <Button x:Name="multiplication" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Content="X" FontSize="18" Width="Auto" Height="Auto" Click="multiplication_Click" />
+            <Button x:Name="addition" Grid.Row="4" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="+" FontSize="18" Width="Auto" Height="Auto" Click="addition_Click" />
+            <Button x:Name="subtraction" Grid.Row="3" Grid.Column="3" Content="-" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Width="Auto" Height="Auto"  Click="subtraction_Click"/>
+            <Button x:Name="division" Grid.Row="2" Grid.Column="2" Content="/" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Width="Auto" Height="Auto"  Click="division_Click"/>
+            <Button x:Name="calculate" Grid.Row="5" Grid.Column="4" Grid.RowSpan="2"    HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="=" FontSize="18" Click="calculateClick" Width="Auto" Height="Auto" />
+            <Button x:Name="inputZero" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"    HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="0" FontSize="18" Click="inputZero_Click" Width="Auto" Height="Auto" />
+            <Button x:Name="inputOne" Grid.Row="5" Grid.Column="0"     HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="1" FontSize="18" Click="inputOne_Click" Width="Auto" Height="Auto"  />
+            <Button x:Name="inputTwo" Grid.Row="5" Grid.Column="1"     HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="2" FontSize="18" Click="inputTwo_Click" Width="Auto" Height="Auto" />
+            <Button x:Name="inputThree" Grid.Row="5" Grid.Column="2"    HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="3" FontSize="18" Click="inputThree_Click_1" Width="Auto" Height="Auto" />
+            <Button x:Name="inputFour" Grid.Row="4" Grid.Column="0"    HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="4"  FontSize="18"   Click="inputFour_Click" Width="Auto" Height="Auto" />
+            <Button x:Name="inputFive" Grid.Row="4" Grid.Column="1"    HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="5" FontSize="18" Click="inputFive_Click" Width="Auto" Height="Auto"  />
+            <Button x:Name="inputSix" Grid.Row="4" Grid.Column="2"     HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="6" FontSize="18" Click="inputSix_Click" Width="Auto" Height="Auto" />
+            <Button x:Name="inputSeven" Grid.Row="3" Grid.Column="0"    HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="7" FontSize="18" Click="inputSeven_Click" Width="Auto" Height="Auto" />
+            <Button x:Name="inputEight" Grid.Row="3" Grid.Column="1"    HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="8" FontSize="18" Click="inputEight_Click" Width="Auto" Height="Auto"  />
+            <Button x:Name="inputNine" Grid.Row="3" Grid.Column="2"    HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="9" FontSize="18" Click="inputNine_Click" Width="Auto" Height="Auto"  />
+            <Button x:Name="clear" Grid.Row="2" Grid.Column="0"    HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Grid.ColumnSpan="2"    Content="Clear" FontSize="18" Click="clear_Click" Width="Auto" Height="Auto" />
+            <Button x:Name="decimalPoint" Grid.Row="6" Grid.Column="2"   HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="." FontSize="18" Click="decimalPoint_Click" Width="Auto" Height="Auto" />
+            <TextBlock Grid.Row="7" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Text="" FontSize="18" />
+            <TextBlock x:Name="expression" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" FontSize="12" />
+            <TextBlock Grid.Row="9" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Text="" FontSize="18" />
+
+            <TextBlock x:Name="result" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" VerticalAlignment="Center" FontSize="32" Padding="20" />
+            <Button x:Name="quit" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="Quit" FontSize="18" Click="quitClick" Width="Auto" />
+        </Grid>
+    </Grid>
+</Window>
